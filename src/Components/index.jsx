@@ -75,6 +75,7 @@ class FormComp extends React.Component {
                             onChange={e => this.setState({tanggal_lahir: e.target.value},
                             () => console.log(this.state))}/>
                     <br /><span style={{color:'red'}}>{this.state.error.tanggal_lahir}</span> <br />
+                    <label>Agama</label><br />
                     <select name="agama" value={this.state.agama}
                             onChange={e => this.setState({agama: e.target.value},
                             () => console.log(this.state))}>
